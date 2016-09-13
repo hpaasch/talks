@@ -1,10 +1,30 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Public data</title>
+    <link rel="stylesheet" href="{% static "talk_app/css/bootstrap.css" %}" media="screen" title="bootstrap" charset="utf-8">
+    <link rel="stylesheet" href="{% static "talk_app/css/main.css" %}" media="screen" charset="utf-8">
   </head>
   <body>
+    <nav class="navbar navbar-inverse navbar-static-top">
+           <div class="container">
+                 <a class="btn btn-primary btn-sm" href="{% url 'index_view' %}">Letter</a>
+                 <a class="btn btn-primary btn-sm" href="{% url 'prepare_view' %}">Prepare</a>
+                 <a class="btn btn-primary btn-sm" href="{% url 'federal_view' %}">Federal</a>
+                 <a class="btn btn-primary btn-sm" href="{% url 'state_view' %}">State</a>
+                 <a class="btn btn-primary btn-sm" href="{% url 'resource_view' %}">Resources</a>
+           </div>
+       </nav>
+<div class="container">
+
+{% block content %}
+
+{% endblock %}
+
+</div>
 
   </body>
 </html>
