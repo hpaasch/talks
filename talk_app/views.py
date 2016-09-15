@@ -14,8 +14,8 @@ class FederalView(TemplateView):
     template_name = 'federal.html'
 
 
-class StateView(TemplateView):
-    template_name = 'state.html'
+class TipsView(TemplateView):
+    template_name = 'tips.html'
 
 
 class ResourceView(TemplateView):
