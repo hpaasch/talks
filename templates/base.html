@@ -11,20 +11,21 @@
   <body>
     <nav class="navbar navbar-inverse navbar-static-top">
            <div class="container">
-                 <a class="btn btn-primary btn-sm" href="{% url 'index_view' %}">Letter</a>
-                 <a class="btn btn-primary btn-sm" href="{% url 'prepare_view' %}">Prepare</a>
-                 <a class="btn btn-primary btn-sm" href="{% url 'federal_view' %}">Federal</a>
-                 <a class="btn btn-primary btn-sm" href="{% url 'tips_view' %}">Tips</a>
-                 <a class="btn btn-primary btn-sm" href="{% url 'resource_view' %}">Resources</a>
+             <a class="btn btn-primary btn-sm" href="{% url 'welcome_view' %}">Welcome</a>
+             <a class="btn btn-primary btn-sm" href="{% url 'prepare_view' %}">Get started</a>
+             <a class="btn btn-primary btn-sm" href="{% url 'federal_view' %}">Federal</a>
+             <a class="btn btn-primary btn-sm" href="{% url 'state_view' %}">State</a>
+             <a class="btn btn-primary btn-sm" href="{% url 'index_view' %}">Letter</a>
+             <a class="btn btn-primary btn-sm" href="{% url 'resource_view' %}">Resources</a>
+             <a class="btn btn-primary btn-sm" href="{% url 'thanks_view' %}">Thanks</a>
            </div>
-       </nav>
-<div class="container">
+    </nav>
+    <div class="container">
 
-{% block content %}
+        {% block content %}
 
-{% endblock %}
+        {% endblock %}
 
-</div>
-
+    </div>
   </body>
 </html>
